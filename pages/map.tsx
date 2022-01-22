@@ -5,11 +5,9 @@ const MapWithNoSSR = dynamic(() => import("../src/components/map"), {
     ssr: false,
 });
 
-const Home = () => (
+const Home = (): JSX.Element => (
     <div>
-        <div>
-            <MapWithNoSSR />
-        </div>
+        <MapWithNoSSR />
     </div>
 );
 

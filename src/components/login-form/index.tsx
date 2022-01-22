@@ -49,7 +49,7 @@ const Redirecting = (): JSX.Element => {
 
 export const LoginForm = (): JSX.Element => {
     const toast = useToast();
-    const initialFocusRef = createRef<HTMLInputElement | undefined>();
+    const initialFocusRef = createRef<any>();
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const [redirecting, setRedirecting] = useState<boolean>(false);

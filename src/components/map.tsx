@@ -1,8 +1,8 @@
 import { Box } from "@chakra-ui/react";
+import "leaflet-defaulticon-compatibility";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import React, { Component } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
 
 export default class MyMap extends Component {
     state = {
@@ -14,7 +14,7 @@ export default class MyMap extends Component {
             [-6.159811, 106.897889],
         ],
     };
-    render() {
+    render(): JSX.Element {
         return (
             <Box w="100vw" h="100vh">
                 <MapContainer
